@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/fonts/iconfont.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="userinfo">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img" alt="nav image">
+                        <span class="text-avatar">A</span> user centre
+                    </a>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:;" id="btnLogout"><span class="iconfont icon-tuichu"></span>quit</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <div class="userinfo">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img" alt="nav image">
+                    <span class="text-avatar">A</span>
+                    <span id="welcome">welcome ***</span>
+                </div>
+                <!-- left navigation area -->
+                <ul class="layui-nav layui-nav-tree" >
+                    <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><span class="iconfont icon-home"></span>home</a></li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><span class="iconfont icon-16"></span>article manage</a>
+                        <dl class="layui-nav-child">
+                            <dt>article area</dt>
+                            <dd><a href="/article/art_cate.html" target="fm"><i class="layui-icon layui-icon-app"></i>article category</a></dd>
+                            <dd id="article-list"><a href="/article/art_list.html" target="fm"><i class="layui-icon layui-icon-app"></i>article list</a></dd>
+                            <dd id="article-pub"><a href="/article/art_pub.html" target="fm"><i class="layui-icon layui-icon-app"></i>create article</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <iframe name="fm" src="/home/dashboard.html" ></iframe>
+        </div>
+
+        <div class="layui-footer">
+            © www.lwl.com - weiliang liu 
+        </div>
+    </div>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/ajaxPre.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
